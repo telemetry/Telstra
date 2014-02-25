@@ -1,0 +1,251 @@
+body {
+margin:0;
+padding:0;
+font-family: "Helvetica Neue", Arial, sans-serif;
+color: #555555;
+background-color: #eeeeee;
+}
+
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+#login-container{
+
+}
+
+.foxtel-wrapper{
+	max-width: 320px;
+	margin: 0 auto;
+    background-color: #0078c0;	
+	height:500px;
+}
+
+#header {
+    display: block;
+    position: relative;
+    background-color: #FFFFFF;
+	height:52px;
+}
+
+.logo {
+    clear: left;
+    float: left;
+    padding: 6px 10px 6px 10px;
+}
+
+.logo-btn {
+    background-image: url("../img/telstramw-icons-lo.png");
+    background-position: 0 top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 40px;
+    text-indent: -9999px;
+    width: 33px;
+	-webkit-background-size: 86px 4750px;
+	background-size: 86px 4750px;
+}
+
+#loading {
+    background-image: url("../img/loader.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+
+#loading h3 {
+color: #FFFFFF;
+font-size: 18px;
+font-weight: bold;
+height: auto;
+padding:40px 35px;
+}
+
+
+#terminal {
+    background-image: url("../img/warning.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+	background-color: #ffffff;
+    display: block;
+    width: 260px;
+	margin:10px;
+	color:#0078c0;
+	padding:10px;
+}
+
+#terminal h3{
+margin-top: 0;
+margin-left: 22px;
+font-size: 15px;
+font-weight: normal;
+}
+
+#terminal p{
+	font-size: 14px;
+}
+
+.foxtel-close {
+    background: url("../img/v11-ui-sprite.png") no-repeat scroll 0px -40px transparent !important;
+    height: 25px !important;
+    width: 25px !important;
+    position: absolute;
+    top: 15px;
+    left: 280px;
+    z-index: 10;
+    padding: 0px;
+    cursor: pointer;
+    cursor: hand;
+    border: 0px none;    
+}
+
+.primary {
+    padding: 10px;
+    max-width: 320px;
+}
+
+#foxtel-heading h3 {
+margin:0 0 10px 10px;
+color: #FFFFFF;
+font-size: 18px;
+font-weight: bold;
+height: auto;
+}
+
+#foxtel-error {
+background-color: #F7E8EA;
+color: #B32034;
+margin: 0 10px 10px;
+padding:5px 10px;
+/* border: 1px solid #B32034; */
+}
+
+#foxtel-error p{
+font-size: 14px;
+font-weight: normal;
+margin:0;
+padding:0;
+
+}
+
+
+input#username, input#password{
+margin-left:10px;
+padding: 0 0 0 10px;
+width:270px;
+border: 0;
+height:50px;
+font-size:20px;
+background-color:#F4F4F4;
+font-family: "Helvetica Neue", Arial, sans-serif;
+color:#414141;
+line-height: 50px;
+}
+
+
+
+label[for="username"],
+label[for="password"] {
+    display:none;
+}
+
+
+.note {
+    font-size:14px;
+    color:#FFF;
+    font-weight:normal;
+    margin:15px 10px;
+}
+
+.cancel{
+    text-align: center;
+    font-size:14px;
+}
+
+.cancel a{
+color:#FFF;
+font-weight:normal;
+}
+
+.submit_button{
+    margin-top:20px;
+}
+
+.btn-blue, .btn-blue:hover, .btn-blue:active {
+    height: 55px;
+    color: #005AA7;
+    background: #bce4fa;
+    text-decoration: none;
+    font-size: 20px;
+    margin:0;
+    border:0;
+    width: 280px;
+    margin-left: 10px;
+    font-weight:bold;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+    cursor: pointer;
+    cursor: hand;
+}
+	#login-container{
+	   position: absolute;
+	   top: 50%;
+	   margin-top: -245px;/* half of #content height*/
+	   left: 0;
+	   width: 100%;
+	}
+
+/* MEDIA QUERIES
+/* ########################################################################### */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+.logo-btn {
+    background-image: url("../img/telstramw-icons@2x.png");
+	-webkit-background-size: 86px 4750px;
+	background-size: 86px 4750px;
+    background-position: 0 top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 40px;
+    text-indent: -9999px;
+    width: 33px;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 321px) {
+	body {
+		background-color: #eeeeee;    
+	}
+	
+	#login-container{
+	   position: absolute;
+	   top: 50%;
+	   margin-top: -245px;/* half of #content height*/
+	   left: 0;
+	   width: 100%;
+	}
+	
+	.foxtel-wrapper{
+		-webkit-box-shadow: 0 10px 10px -10px #555;
+		   -moz-box-shadow: 0 10px 10px -10px #555;
+		        box-shadow: 0 10px 10px -10px #555;
+	}
+}
+
+
+

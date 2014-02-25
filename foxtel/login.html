@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html><head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Telstra Login</title>
+  <link rel="stylesheet" type="text/css" href="css/mobile.css">
+</head>
+<body>
+<div id="login-container">
+	<div class="foxtel-wrapper">
+		<div id="header">
+	        <div class="logo">
+	            <a class="logo-btn">Telstra Logo</a>
+	        </div>
+			<div class="close">
+				<button class="foxtel-close" type="button" onclick="doCancel();"></button>
+			</div>
+		</div><!-- end of header -->
+		
+		<div class="primary">
+				<div id="foxtel-heading">
+					<h3>Please enter your Bigpond&reg; username and password associated with your T&ndash;Box</h3>
+				</div>
+				<div id="foxtel-error">
+					<p>Please enter your username and password</p>
+				</div>
+				<div id="form">				
+					<form id="usernameLoginForm" method="post" action="https://signon.bigpond.com/login">
+						<input id="goto" name="goto" value="https://signon.bigpond.com/endstate/foxtelgo" type="hidden">
+						<input id="gotoOnFail" name="gotoOnFail" value="" type="hidden">
+						<div class="username">
+							<label for="username" class="inline">Username</label>
+							<input id="username" style="border-bottom:2px solid #ffffff" placeholder="Username" name="username" maxlength="64" size="55" class="login" type="username">
+						</div>
+						<div class="password">
+							<label for="password" class="inline">Password</label>
+							<input id="password" placeholder="Password" name="password" maxlength="16" size="55" class="login" type="password">
+						</div>
+						<div class="submit_button">
+							<button id="login-btn" class="btn-blue">Log in</button>
+						</div>
+						<div class="note">
+							<p>Forgotten your username or password?<br/>
+							Having trouble viewing your account?<br/>
+							For more info please visit: http://telstra.com/tbox-setup
+							</p>
+						</div>
+					</form>
+					<div class="cancel">
+						<a href="https://signon.bigpond.com/endstate/foxtelgo?status=cancel">Cancel</a>
+					</div>
+				</div><!-- End of Form Container -->
+	    </div><!-- End of Primary Container -->
+	</div><!-- End of Foxtel Wrapper Container -->
+</div><!-- End of Login Container -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script>
+$(function() {
+// Invoke the plugin
+$('input, textarea').placeholder();
+});
+</script>
+</body>
+</html>
