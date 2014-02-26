@@ -23,7 +23,7 @@ textarea:focus, input:focus{
 	max-width: 320px;
 	margin: 0 auto;
     background-color: #0078c0;	
-	height:500px;
+/* 	height:500px; */
 }
 
 #header {
@@ -195,8 +195,10 @@ font-weight:normal;
 }
 	#login-container{
 	   position: absolute;
+/*
 	   top: 50%;
-	   margin-top: -245px;/* half of #content height*/
+	   margin-top: -245px;
+*/
 	   left: 0;
 	   width: 100%;
 	}
