@@ -15,9 +15,6 @@ textarea:focus, input:focus{
     outline: 0;
 }
 
-#login-container{
-
-}
 
 .foxtel-wrapper{
 	max-width: 320px;
@@ -195,10 +192,8 @@ font-weight:normal;
 }
 	#login-container{
 	   position: absolute;
-/*
 	   top: 50%;
-	   margin-top: -245px;
-*/
+	   margin-top: -219px;/* half of #content height*/
 	   left: 0;
 	   width: 100%;
 	}
@@ -233,21 +228,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	body {
 		background-color: #eeeeee;    
 	}
-	
-	#login-container{
-	   position: absolute;
-	   top: 50%;
-	   margin-top: -245px;/* half of #content height*/
-	   left: 0;
-	   width: 100%;
-	}
-	
+
 	.foxtel-wrapper{
 		-webkit-box-shadow: 0 10px 10px -10px #555;
 		   -moz-box-shadow: 0 10px 10px -10px #555;
 		        box-shadow: 0 10px 10px -10px #555;
 	}
 }
-
-
-

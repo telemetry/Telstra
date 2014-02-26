@@ -22,11 +22,11 @@
 				<div id="foxtel-heading">
 					<h3>Please enter your Bigpond&reg; username and password associated with your T&ndash;Box</h3>
 				</div>
-<!--
+
 				<div id="foxtel-error">
 					<p>Please enter your username and password</p>
 				</div>
--->
+
 				<div id="form">				
 					<form id="usernameLoginForm" method="post" action="https://signon.bigpond.com/login">
 						<input id="goto" name="goto" value="https://signon.bigpond.com/endstate/foxtelgo" type="hidden">
@@ -60,13 +60,16 @@
 <script src="js/jquery.placeholder.js"></script>
 <script>
 $(function() {
+
 // Invoke the plugin
 $('input, textarea').placeholder();
 	var positionFoxtel = function() {
 		var foxHeight = $('.foxtel-wrapper').innerHeight();
 		$('#login-container').css('margin-top', -foxHeight/2);
+		console.log(foxHeight);
 	} 
 	setTimeout(positionFoxtel, 500);
+
 });
 </script>
 </body>
