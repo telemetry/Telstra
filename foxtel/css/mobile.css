@@ -19,7 +19,7 @@ textarea:focus, input:focus{
 .foxtel-wrapper{
 	max-width: 320px;
 	margin: 0 auto;
-    background-color: #0078c0;	
+    background-color: #f05a00;	
 /* 	height:500px; */
 }
 
@@ -37,15 +37,15 @@ textarea:focus, input:focus{
 }
 
 .logo-btn {
-    background-image: url("../img/telstramw-icons-lo.png");
+    background-image: url("../img/telstra-orange-logo.png");
+	-webkit-background-size: 33px 40px;
+	background-size: 33px 40px;
     background-position: 0 top;
     background-repeat: no-repeat;
     display: block;
     height: 40px;
     text-indent: -9999px;
     width: 33px;
-	-webkit-background-size: 86px 4750px;
-	background-size: 86px 4750px;
 }
 
 #loading {
@@ -74,7 +74,7 @@ padding:40px 35px;
     display: block;
     width: 260px;
 	margin:10px;
-	color:#0078c0;
+	color:#414141;
 	padding:10px;
 }
 
@@ -83,6 +83,7 @@ margin-top: 0;
 margin-left: 22px;
 font-size: 15px;
 font-weight: normal;
+padding-bottom: 10px;
 }
 
 #terminal p{
@@ -177,8 +178,8 @@ font-weight:normal;
 
 .btn-blue, .btn-blue:hover, .btn-blue:active {
     height: 55px;
-    color: #005AA7;
-    background: #bce4fa;
+    color: #f05a00;
+    background: #facdb2;
     text-decoration: none;
     font-size: 20px;
     margin:0;
@@ -208,9 +209,9 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
 
 .logo-btn {
-    background-image: url("../img/telstramw-icons@2x.png");
-	-webkit-background-size: 86px 4750px;
-	background-size: 86px 4750px;
+    background-image: url("../img/telstra-orange-logo@2x.png");
+	-webkit-background-size: 33px 40px;
+	background-size: 33px 40px;
     background-position: 0 top;
     background-repeat: no-repeat;
     display: block;

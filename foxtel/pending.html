@@ -23,5 +23,17 @@
 	    </div><!-- End of Primary Container -->
 	</div><!-- End of Foxtel Wrapper Container -->
 </div><!-- End of Login Container -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+$(function() {
+	var positionFoxtel = function() {
+		var foxHeight = $('.foxtel-wrapper').innerHeight();
+		$('#login-container').css('margin-top', -foxHeight/2);
+		console.log(foxHeight);
+	} 
+	setTimeout(positionFoxtel, 500);
+
+});
+</script>
 </body>
 </html>
